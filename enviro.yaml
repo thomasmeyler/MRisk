@@ -1,0 +1,17 @@
+name: mrisk
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy 
+  - pandas
+  - pytorch
+  - torchvision 
+  - torchaudio 
+  - pytorch-cuda=11.7
+  - scipy
+  # - ipykenrnel
+  # - jupyter
