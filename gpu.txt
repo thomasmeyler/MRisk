@@ -1,0 +1,13 @@
+
+TO USE GPUS:
+
+import torch
+torch.tensor([1,2,3], device="mps")
+# add device="mps"
+
+Model Repos: 
+
+Option PROJ_Option_Pricing_Matlab
+https://github.com/jkirkby3/PROJ_Option_Pricing_Matlab
+
+
