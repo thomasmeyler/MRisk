@@ -40,7 +40,8 @@ class flat:
         meanM = np.full(shape=(T, len(weightsA)), fill_value=meanReturns)
         meanM = meanM.T
         portfolio_sims = np.full(shape=(T, mc_sims), fill_value=0.0)
-        initialPortfolio = ((vStart.multiply(weights_adjuster)*lot_multiplier).sum(axis=1)).values[0]
+        # initialPortfolio = ((vStart.multiply(weights_adjuster)*lot_multiplier).sum(axis=1)).values[0]
+        initialPortfolio = ((vStart.multiply(weights_adjuster)).sum(axis=1)).values[0]
         for m in range(0, mc_sims):
             Z = np.random.normal(size=(T, len(weightsA)))
             L = np.linalg.cholesky(covMatrix)

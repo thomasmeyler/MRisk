@@ -1,10 +1,11 @@
 cocoa:
-  CC_LDN:
+  QC:
     lot_size: 10
     lot_freq: 'constant'
     strike_spacing: 50
     unit: 't'
     currency: 'GBP'
+    currency_unit: 1
     chain:
       futures:
         month:
@@ -12,12 +13,13 @@ cocoa:
       options:
         month:
           absolute: [3, 5, 7, 9, 12, 15, 17, 19, 21, 24, 27, 29, 31, 33]
-  CC_US:
+  CC:
     lot_size: 10
     lot_freq: 'constant'
     strike_spacing: 50
     unit: 't'
     currency: 'USD'
+    currency_unit: 1
     chain:
       futures:
         month:
@@ -25,3 +27,50 @@ cocoa:
       options:
         month:
           absolute: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+coffee:
+  KC:
+    lot_size: 37500
+    lot_freq: 'constant'
+    strike_spacing: 2.5
+    unit: 'pounds'
+    currency: 'USD'
+    currency_unit: .01
+    chain:
+      futures:
+        month:
+          absolute: [3, 5, 7, 9, 12, 15, 17, 19, 21, 24]
+      options:
+        month:
+          absolute: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                     13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+
+sugar:
+  SB:
+    lot_size: 112000
+    lot_freq: 'constant'
+    strike_spacing: .25
+    unit: 'pounds'
+    currency: 'USD'
+    currency_unit: .01
+    chain:
+      futures:
+        month:
+          absolute: [3,  5,  7, 10, 15, 17, 19, 22]
+      options:
+        month:
+          relative: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  QW:
+    lot_size: 50
+    lot_freq: 'constant'
+    strike_spacing: 10
+    unit: 't'
+    currency: 'USD'
+    currency_unit: 1
+    chain:
+      futures:
+        month:
+          absolute: [3,  5,  8, 10, 12, 15, 17, 20, 22, 24, 27, 29, 32, 34, 36]
+      options:
+        month:
+          relative: [3,  5,  8, 10, 12, 15, 17, 20, 22, 24, 27, 29, 32, 34, 36]
