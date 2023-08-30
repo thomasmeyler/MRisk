@@ -16,6 +16,9 @@ class PriceModel:
         self._ebrt = None
         self._sqrt_tte = None
         self._moneyness = None
+        self.greeks = None
+        self.gradient = None
+
         
         # self.model_type = model_type
         
