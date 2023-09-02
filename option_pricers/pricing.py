@@ -13,11 +13,17 @@ class PriceModel:
         self.option_sign = torch.tensor([option_sign], requires_grad=True)
         
         self._ert = None
+        self._Phi = None
+        
+        
+        
+        
         self._ebrt = None
         self._sqrt_tte = None
         self._moneyness = None
         self.greeks = None
         self.gradient = None
+        
 
         
         # self.model_type = model_type
@@ -28,6 +34,14 @@ class PriceModel:
                        self.q, self.r, self.option_sign)
             )
         return out
+    
+    @property
+    def Phi(self):
+        if self._Phi is None:
+            self._Phi = torch.distributions.Normal(0,1)
+        return self._Phi
+    
+    
     
     @property
     def sqrt_tte(self):
