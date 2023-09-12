@@ -35,7 +35,6 @@ class PriceModel:
             self._sqrt_tte = torch.sqrt(self.tte)
         return self._sqrt_tte
     
-    
     @property
     def erbt(self):
         if self._erbt is None:

@@ -1,0 +1,7 @@
+https://github.com/gfiocco/option-pricing/blob/master/python/option_pricing.py
+https://github.com/Matteo-Ferrara/option-pricer
+https://github.com/AlexandreMoulti/bachelier
+https://github.com/zoakes/BachelierOptionsPricing/blob/main/Bachelier.ipynb
+https://www.cmegroup.com/tools-information/quikstrike/option-settlement-energy.html
+https://github.com/kpmooney/numerical_methods_youtube/tree/master/bachelier_model
+https://github.com/PyFE/PyFENG/blob/2e01f92e5f8161e3ef36098d5fbde3fa8e236576/pyfeng/norm.py#L16
